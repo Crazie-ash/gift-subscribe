@@ -1,0 +1,7 @@
+{
+  "name": "gift-subscribe",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
