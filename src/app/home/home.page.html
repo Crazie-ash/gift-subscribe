@@ -1,4 +1,76 @@
-<app-header></app-header>
-<app-navbar></app-navbar>
-<!-- Your page content here -->
-<app-footer></app-footer>
+<ion-content>
+  <div class="content-1">
+    <div class="header-content">
+      <h1 class="hero-headline">Discover the magic of our surprise box</h1>
+      <p class="hero-description">
+        Unleash your child's curiosity with our educational subscription box
+        filled with fun and learning.
+      </p>
+      <ion-button (click)="navigateToSubscribe()">Subscribe Now</ion-button>
+    </div>
+    <img src="assets/placeholder.png" alt="Gifts" />
+  </div>
+  <div class="content-2">
+    <div class="section-title">
+      <p>Discover</p>
+      <h2>How It Works: Subscribe and Receive Your Surprise Box</h2>
+      <p>
+        Subscribe to our surprise subscription box and give your child the gift
+        of learning. Each month, we curate a box filled with educational
+        materials tailored to your child's age and interests.
+      </p>
+    </div>
+
+    <div class="content">
+      <div class="ion-grid">
+        <div class="ion-row">
+          <div class="ion-col-4">
+            <div class="content-item">
+              <img
+                class="subscribe-image"
+                src="assets/step-1.png"
+                alt="Subscribe Image"
+              />
+              <h3>Step 1: Subscribe</h3>
+              <p>
+                Select a subscription plan that suits your child's learning
+                needs and preferences.
+              </p>
+            </div>
+          </div>
+          <div class="ion-col-4">
+            <div class="content-item">
+              <img
+                class="subscribe-image"
+                src="assets/step-2.png"
+                alt="Subscribe Image"
+              />
+              <h3>Step 2: Personalise Your Box</h3>
+              <p>
+                Tell us about your child's age, interests, and learning goals,
+                and we'll customize their surprise box accordingly.
+              </p>
+            </div>
+          </div>
+          <div class="ion-col-4">
+            <div class="content-item">
+              <img
+                class="subscribe-image"
+                src="assets/step-3.png"
+                alt="Subscribe Image"
+              />
+              <h3>Step 3: Receive Your Surprise Box</h3>
+              <p>
+                Sit back and relax as your child eagerly awaits the arrival of
+                their monthly surprise box filled with engaging learning
+                materials.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <ion-button (click)="navigateToSubscribe()">Subscribe Now</ion-button>
+  </div>
+ 
+</ion-content>

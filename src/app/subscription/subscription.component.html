@@ -1,3 +1,154 @@
-<p>
-  subscription works!
-</p>
+<ion-content class="subscription-component">
+  <ion-grid>
+    <ion-row>
+      <ion-col size="6">
+        <ion-card>
+          <ion-card-header>
+            <ion-card-title>Subscribe</ion-card-title>
+            <ion-card-subtitle>to our Monthly Surprise Box</ion-card-subtitle>
+          </ion-card-header>
+          <ion-card-content>
+            <form
+              [formGroup]="subscriptionForm"
+              (ngSubmit)="submitForm()"
+              novalidate
+            >
+              Contact Information
+              <ion-item lines="full">
+                <ion-label position="stacked">Your Name</ion-label>
+                <ion-input
+                  formControlName="name"
+                  type="text"
+                  aria-label="Name"
+                  fill="outline"
+                  placeholder="e.g Osama Alshathri"
+                ></ion-input>
+              </ion-item>
+              <ion-item lines="full">
+                <ion-label position="stacked">Email</ion-label>
+                <ion-input
+                  formControlName="email"
+                  type="text"
+                  aria-label="Email"
+                  fill="outline"
+                  placeholder="Osama@gmail.com"
+                ></ion-input>
+              </ion-item>
+
+              Child's Information
+              <ion-item>
+                <ion-label position="stacked">Child’s Full Name</ion-label>
+                <ion-input
+                  formControlName="childName"
+                  type="text"
+                  placeholder="Enter child's full name"
+                ></ion-input>
+              </ion-item>
+
+              <ion-item>
+                <ion-label position="stacked">Child’s Date of Birth</ion-label>
+                <ion-grid>
+                  <ion-row>
+                    <ion-col size="4">
+                      <ion-item>
+                        <ion-label position="stacked">Day</ion-label>
+                        <ion-select
+                          formControlName="childDay"
+                          interface="popover"
+                        >
+                          <ion-select-option
+                            *ngFor="let day of days"
+                            [value]="day"
+                            >{{ day }}</ion-select-option
+                          >
+                        </ion-select>
+                      </ion-item>
+                    </ion-col>
+                    <ion-col size="4">
+                      <ion-item>
+                        <ion-label position="stacked">Month</ion-label>
+                        <ion-select
+                          formControlName="childMonth"
+                          interface="popover"
+                        >
+                          <ion-select-option
+                            *ngFor="let month of months"
+                            [value]="month"
+                            >{{ month }}</ion-select-option
+                          >
+                        </ion-select>
+                      </ion-item>
+                    </ion-col>
+                    <ion-col size="4">
+                      <ion-item>
+                        <ion-label position="stacked">Year</ion-label>
+                        <ion-select
+                          formControlName="childYear"
+                          interface="popover"
+                        >
+                          <ion-select-option
+                            *ngFor="let year of years"
+                            [value]="year"
+                            >{{ year }}</ion-select-option
+                          >
+                        </ion-select>
+                      </ion-item>
+                    </ion-col>
+                  </ion-row>
+                </ion-grid>
+              </ion-item>
+
+              <ion-item>
+                <ion-label position="stacked">Grade</ion-label>
+                <ion-select formControlName="grade" interface="popover">
+                  <ion-select-option value="Grade 1">Grade 1</ion-select-option>
+                  <ion-select-option value="Grade 2">Grade 2</ion-select-option>
+                  <!-- Add more grade options as needed -->
+                </ion-select>
+              </ion-item>
+
+              <ion-item>
+                <ion-label>Gender</ion-label>
+                <ion-radio-group formControlName="gender">
+                  <ion-row>
+                    <ion-label>Male</ion-label>
+                    <ion-radio value="male"></ion-radio>
+                  </ion-row>
+                  <ion-row>
+                    <ion-label>Female</ion-label>
+                    <ion-radio value="female"></ion-radio>
+                  </ion-row>
+                </ion-radio-group>
+              </ion-item>
+              <ion-item>
+                <ion-label>Topics</ion-label>
+                <ion-segment formControlName="topics">
+                  <ion-segment-button value="topic1">
+                    Topic 1
+                  </ion-segment-button>
+                  <ion-segment-button value="topic2">
+                    Topic 2
+                  </ion-segment-button>
+                  <ion-segment-button value="topic3">
+                    Topic 3
+                  </ion-segment-button>
+                  <!-- Add more topics buttons here -->
+                </ion-segment>
+              </ion-item>
+              <ion-button>Continue to payment</ion-button>
+            </form>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+      <ion-col size="6">
+        <ion-card>
+          <ion-card-header>
+            <ion-card-title>Summary</ion-card-title>
+            <ion-card-subtitle>of your Monthly Surprise Box</ion-card-subtitle>
+          </ion-card-header>
+          <ion-card-content> content 2 </ion-card-content>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

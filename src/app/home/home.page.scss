@@ -1,27 +1,159 @@
-#container {
+.content-1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 208px 64px 0; /* Adjusted padding */
+  width: 100%;
+  background-color: #AB95F9;
+
+}
+
+.header-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  max-width: 768px;
+}
+
+.hero-headline {
+  font-weight: 900;
+  font-size: 56px;
+  line-height: 120%;
+  color: #FFFFFF;
+  text-shadow: 2px 2px 0px #896AF9;
   text-align: center;
-
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
 }
 
-#container strong {
-  font-size: 20px;
-  line-height: 26px;
+.hero-description {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 150%;
+  color: #FFFFFF;
+  text-align: center;
 }
 
-#container p {
+
+/* content-2 styles */
+.content-2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 112px 64px;
+  gap: 80px;
+  isolation: isolate;
+  width: 100%; /* Responsive width */
+  background: #FFF9E6;
+  border-radius: 0px;
+}
+
+/* Apply background image only for desktop screens */
+@media (min-width: 768px) {
+  .content-2 {
+    background-image: url('../../assets/vectors-background.png');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+}
+
+.section-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  max-width: 768px; /* Adjusted max width */
+  width: 100%; /* Responsive width */
+}
+
+.section-title h2 {
+  font-weight: 600;
   font-size: 16px;
-  line-height: 22px;
-
-  color: #8c8c8c;
-
-  margin: 0;
+  color: #000000;
 }
 
-#container a {
-  text-decoration: none;
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  max-width: 100%; /* Adjusted max width */
+  width: 100%; /* Responsive width */
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  gap: 48px;
+  max-width: 1312px; /* Adjusted max width */
+  width: 100%; /* Responsive width */
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  max-width: 405.33px; /* Adjusted max width */
+  width: 100%; /* Responsive width */
+}
+
+.content-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  max-width: 405.33px; /* Adjusted max width */
+  width: 100%; /* Responsive width */
+}
+
+.content-item h3 {
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 130%;
+  text-align: center;
+  color: #000000; /* Black text color */
+  margin-bottom: 16px; /* Add some bottom margin for spacing */
+}
+
+.subscribe-image {
+  width: 96px;
+  height: 96px;
+  background: #FFFFFF;
+  border-radius: 144px;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.content-item p {
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  text-align: center;
+  color: #000000; /* Black text color */
+}
+
+/* Button */
+.button-subscribe-now {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4% 5%;
+  width: 40%;
+  max-width: 167px; /* Limiting maximum width */
+  height: auto; /* Allowing height to adjust based on content */
+  background-color: #FFFFFF;
+  box-shadow: 2% 2% 0px -1% #896AF9; /* Using percentages for box shadow */
+  border-radius: 4%;
+  font-family: 'Nunito';
+  font-weight: 900;
+  font-size: 4vw; /* Using viewport width for font size */
+  line-height: 6vw; /* Adjusting line height relative to font size */
+  color: #896AF9;
+  text-align: center;
 }
