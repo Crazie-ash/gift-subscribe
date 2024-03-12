@@ -35,4 +35,11 @@ ion-header {
   -webkit-box-shadow: none !important;
   box-shadow: none !important;
 }
+.item-inner{
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
 
+ion-grid{
+  margin:0;
+}

@@ -27,20 +27,17 @@ export class SubscriptionComponent implements OnInit {
           Validators.required,
           Validators.email,
         ],
-      ], 
-      childName: ['', [Validators.required, Validators.minLength(2)]],
-      childDateOfBirth: [
-        '',
-        [
-          Validators.required,
-          Validators.pattern('[a-z0-9._%+-]+@[a-z0-9.-]+.[a-z]{2,3}$'),
-        ],
       ],
+      childName: ['', [Validators.required, Validators.minLength(2)]],
+      childDay: ['', [Validators.required]],
+      childMonth: ['', [Validators.required]],
+      childYear: ['', [Validators.required]],
       grade: ['', [Validators.required, Validators.minLength(2)]],
       gender: ['', [Validators.required]],
       topics: [[], [Validators.required, Validators.minLength(3)]],
     });
   }
+
 
   submitForm = () => {
     if (this.subscriptionForm.valid) {
