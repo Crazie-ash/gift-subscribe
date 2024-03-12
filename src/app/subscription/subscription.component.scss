@@ -1,0 +1,283 @@
+.subscription-component {
+  ion-grid {
+    background-image: url("../../assets/subscription-background.png");
+    background-size: 100%;
+    // background-position: center center;
+    background-repeat: no-repeat;
+  }
+  ion-row {
+    margin: 50px;
+  }
+}
+
+.subscription-header h1 {
+  font-family: Nunito;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 32px;
+  letter-spacing: 0em;
+  color: #202124;
+  margin: 0;
+}
+
+.subscription-header p {
+  font-family: Nunito;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.10000000149011612px;
+  color: #202124;
+  margin: 0;
+}
+
+.subscription-form {
+  h2 {
+    font-family: Nunito;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32px;
+    letter-spacing: 0em;
+    color: #202124;
+    margin: 10px 0px;
+  }
+  .item-native,
+  .item-inner {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+  .label-stacked {
+    font-family: Nunito;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #202124;
+    margin: 10px 0px;
+  }
+}
+.item-inner {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+.dob-class {
+  .md .hydrated {
+    margin: 0;
+  }
+  .day,
+  .month,
+  .year {
+    width: 120px;
+    border: 1px solid grey;
+    // border-radius:20px;
+  }
+}
+.grade-form {
+  ion-select {
+    border: 1px solid grey;
+    height: 56px;
+  }
+}
+.flex {
+  display: flex;
+}
+
+.checkbox-gender {
+  ion-checkbox {
+    border: 1px solid grey;
+    margin-right: 5px;
+    padding: 15px;
+    width: 100%;
+  }
+  label {
+    display: flex;
+  }
+}
+
+.topic-form {
+  ion-segment-button {
+    border: 1px solid grey;
+    margin-right: 5px;
+  }
+}
+.subscribe-btn {
+  color: #896af9;
+  --background: #fff;
+  --padding-top: 10px;
+  --padding-bottom: 10px;
+  --padding-start: 1.4em;
+  --padding-end: 1.4em;
+  text-transform: capitalize;
+  --border-shadow: 4px 4px 0px -1px #896af9;
+  font-family: Nunito;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 38px;
+  letter-spacing: 0em;
+  text-align: center;
+  margin-top: 25px;
+  margin-bottom: 15px;
+  width: 100%;
+}
+
+.custom-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 16px;
+  gap: 12px;
+  width: 336px;
+  height: 96px;
+  background: #ffffff;
+  border-radius: 8px;
+}
+
+.custom-card ion-card-header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px;
+  width: 100%;
+}
+
+.custom-card ion-card-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px;
+  width: 100%;
+}
+
+.mystery-box,
+.sar-456 {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  color: #202124;
+}
+
+.x1,
+.monthly {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: #838383;
+}
+
+.order-summary {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 21px;
+  width: 336px;
+  height: 174px;
+}
+
+.order-summary ion-card-content {
+  display: flex;
+  flex-direction: column;
+  gap: 21px;
+}
+
+.subtotal,
+.shipping,
+.taxes,
+.total {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 17px;
+}
+
+.subtotal .label,
+.shipping .label,
+.taxes .label,
+.total .label {
+  width: 253px;
+  height: 21px;
+  font-family: "SF Pro Text";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  color: #000000;
+}
+
+.subtotal .cost,
+.taxes .cost,
+.total .cost {
+  width: 66px;
+  height: 24px;
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #202124;
+  text-align: right;
+}
+
+.shipping .value {
+  width: 30px;
+  height: 21px;
+  font-family: "SF Pro Text";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  text-align: right;
+  color: #707070;
+}
+
+.divider {
+  width: 336px;
+  height: 1px;
+  background: #d1c5fb;
+}
+
+.total .label {
+  width: 239px;
+  height: 26px;
+  font-family: "SF Pro Text";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 150%;
+  color: #333333;
+}
+
+.total .cost {
+  width: 66px;
+  height: 24px;
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #202124;
+  text-align: right;
+}
+
+.subscribe-btn {
+  color: #896af9;
+  --background: #fff;
+  --border-radius: 24px;
+  --padding-top: 20px;
+  --padding-bottom: 20px;
+  --padding-start: 1.9em;
+  --padding-end: 1.9em;
+  text-transform: capitalize;
+  --border-shadow: 4px 4px 0px -1px #896af9;
+  font-family: Nunito;
+  font-size: 23px;
+  font-weight: 700;
+  line-height: 38px;
+  letter-spacing: 0em;
+  text-align: center;
+}
