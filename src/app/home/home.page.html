@@ -1,4 +1,7 @@
 <ion-content>
+  <ion-header>
+    <app-header></app-header>
+  </ion-header>
   <div class="content-1">
     <div class="header-content">
       <h1 class="hero-headline">Discover the magic of our surprise box</h1>
@@ -6,7 +9,9 @@
         Unleash your child's curiosity with our educational subscription box
         filled with fun and learning.
       </p>
-      <ion-button (click)="navigateToSubscribe()" class="subscribe-btn">Subscribe Now</ion-button>
+      <ion-button (click)="navigateToSubscribe()" class="subscribe-btn"
+        >Subscribe Now</ion-button
+      >
     </div>
     <img src="assets/placeholder.png" alt="Gifts" />
   </div>
@@ -62,7 +67,7 @@
                 alt="Subscribe Image"
               />
               <h3>Step 3:</h3>
-              <h4>Receive Your Surprise Box</h4> 
+              <h4>Receive Your Surprise Box</h4>
               <p>
                 Sit back and relax as your child eagerly awaits the arrival of
                 their monthly surprise box filled with engaging learning
@@ -73,7 +78,13 @@
         </div>
       </div>
     </div>
-    <ion-button (click)="navigateToSubscribe()" class="subscribe-btn">Subscribe Now</ion-button>
+    <ion-button (click)="navigateToSubscribe()" class="subscribe-btn"
+      >Subscribe Now</ion-button
+    >
   </div>
- 
+  <ion-footer>
+    <div>
+      <app-footer></app-footer>
+    </div>
+  </ion-footer>
 </ion-content>

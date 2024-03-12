@@ -1,0 +1,21 @@
+landing-page {
+  ion-header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000; /* Adjust the z-index as needed */
+  }
+
+  ion-footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 1000; /* Adjust the z-index as needed */
+  }
+
+  .landing-content {
+    /* Add padding or margin to the content to ensure it's not hidden by the header and footer */
+    padding-top: 70px; /* Adjust according to your header's height */
+    padding-bottom: 70px; /* Adjust according to your footer's height */
+  }
+}

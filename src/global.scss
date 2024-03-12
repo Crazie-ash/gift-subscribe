@@ -43,3 +43,7 @@ ion-header {
 ion-grid{
   margin:0;
 }
+
+ion-header, ion-footer {
+  position: static !important; /* Set position to static */
+}
